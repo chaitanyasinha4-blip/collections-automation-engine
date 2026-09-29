@@ -19,7 +19,7 @@ The workflow:
 
 The scenario checks for new rows every 15 minutes.
 
-```
+```mermaid
 flowchart TD
 A["Google Sheets: Watch New Rows"] --> B{"Invoice > 500000 AND Days Overdue > 30?"}
 B -->|Yes| C["High Priority: Finance Manager"]
