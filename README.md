@@ -19,6 +19,9 @@ The workflow:
 
 The scenario checks for new rows every 15 minutes.
 
+```flowchart TD A["Google Sheets: Watch New Rows"] --> B{"Invoice > 500000 AND Days Overdue > 30?"} B -->|Yes| C["High Priority: Finance Manager"] B -->|No| D["Normal Priority: Account Owner"] C --> E["Update Google Sheets"] D --> E
+```
+
 ## 3. Business Rules
 
 | Condition | Priority | Escalation | Action |
