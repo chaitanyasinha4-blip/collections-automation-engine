@@ -27,6 +27,28 @@ B -->|No| D["Normal Priority: Account Owner"]
 C --> E["Update Google Sheets"]
 D --> E
 ```
+## Project Screenshots
+
+### 1. Make.com Workflow
+
+The scenario watches for new rows in Google Sheets, evaluates the invoice
+against the business rules, and updates the priority and follow-up action.
+
+![Make.com workflow](Make.com Google Sheet Trigger Flow.png)  
+
+### 2. High-Priority Example
+
+Invoices meeting both the amount and overdue-day thresholds are assigned
+High priority, escalated to the Finance Manager, and marked for immediate follow-up.
+
+![High-priority example](High Priority Record.png)
+
+### 3. Normal-Priority Example
+
+Invoices that do not meet both thresholds are assigned Normal priority
+and routed to the account owner for standard follow-up.
+
+![Normal-priority example](Normal Priority Record.png)
 
 ## 3. Business Rules
 
