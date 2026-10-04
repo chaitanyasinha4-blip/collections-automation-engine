@@ -34,21 +34,21 @@ D --> E
 The scenario watches for new rows in Google Sheets, evaluates the invoice
 against the business rules, and updates the priority and follow-up action.
 
-![Make.com workflow](Make.com Google Sheet Trigger Flow.png)  
+![Make.com workflow](Make-workflow.png)  
 
 ### 2. High-Priority Example
 
 Invoices meeting both the amount and overdue-day thresholds are assigned
 High priority, escalated to the Finance Manager, and marked for immediate follow-up.
 
-![High-priority example](High Priority Record.png)
+![High-priority example](High-Priority.png)
 
 ### 3. Normal-Priority Example
 
 Invoices that do not meet both thresholds are assigned Normal priority
 and routed to the account owner for standard follow-up.
 
-![Normal-priority example](Normal Priority Record.png)
+![Normal-priority example](Normal-priority.png)
 
 ## 3. Business Rules
 
